@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2948FF;
+    --secondary: #396AFC;
+    --white: rgb(255, 255, 255, 1);
+    --form-input-color: rgba(252, 253, 254, 1);
+    --form-input-boder: rgba(222, 222, 222, 1);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/assets/fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans Italic';
+    src: url('/assets/fonts/NunitoSans-Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    font-family: 'Montserrat';
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, var(--secondary), var(--primary));
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    float: left;
+    background-color: white;
+    border-top-right-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+    width: 50%;
+    z-index: 100;
+    padding-top: 8%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 2%;
+}
+
+.right img {
+    height: 500px;
+}
+
+.ewallet-logo {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    gap: 9px;
+}
+
+.left img {
+    width: 25px;
+    height: 23px;
+
+}
+
+.text-logo {
+    font-family: 'NunitoSans';
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.text-fill h1 {
+    font-family: 'Montserrat';
+    font-size: 21px;
+}
+
+.text-fill p {
+    opacity: 50%;
+    font-size: 12px;
+
+}
+
+.text-fill {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sing-in-btn {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sing-in-btn button {
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid var(--form-input-boder);
+    background-color: var(--form-input-color);
+    color: rgba(79, 86, 101, 1);
+}
+
+.google-btn {
+    background: url(../assets/icon/google.svg) no-repeat 178px center;
+}
+
+.facebook-btn {
+    background: url(../assets/icon/round-fb.svg) no-repeat 170px center;
+}
+
+.line {
+    margin-top: 2px;
+    border: .1px solid var(--form-input-boder);
+    opacity: 50%;
+}
+
+.or {
+    color: var(--form-input-boder);
+    background-color: white;
+    font-family: 'Montserrat';
+    position: relative;
+    text-align: center;
+    width: 130px;
+    border: 1px solid white;
+    top: -20px;
+    font-size: 11px;
+    left: 200px;
+}
+
+
+
+label {
+    margin-bottom: 4px;
+}
+
+/* email form */
+.email-form input {
+    height: 38px;
+    border: 1px solid var(--form-input-boder);
+    background-color: var(--form-input-color);
+    border-radius: 8px;
+    padding: 15px;
+    background: url(../assets/icon/mail.svg) no-repeat 12px center;
+    background-size: 15px 15px;
+    font-size: 13px;
+    padding-left: 38px;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 42px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    width: 100%;
+}
+
+.password-form input {
+    height: 38px;
+    padding: 15px;
+    background-image: url(../assets/icon/Password.svg);
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--form-input-boder);
+    background-color: var(--form-input-color);
+    border-radius: 8px;
+    padding-left: 38px;
+    margin-bottom: 10px;
+}
+
+.toggle-eye {
+    position: relative;
+    opacity: 50%;
+    left: 94%;
+    top: -39px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.toggle-eye img{
+    width: 14px;
+}
+
+.email-form,
+.password-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form {
+    margin-top: -12px;
+}
+
+.register-question {
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-question a {
+    text-decoration: none;
+}
+
+.confirm-password {
+    margin-top: -12px;
+}
+

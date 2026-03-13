@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2948FF;
+    --secondary: #396AFC;
+    --white: rgb(255, 255, 255, 1);
+    --form-input-color: rgba(252, 253, 254, 1);
+    --form-input-boder: rgba(222, 222, 222, 1);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/assets/fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans Italic';
+    src: url('/assets/fonts/NunitoSans-Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    font-family: 'Montserrat';
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, var(--secondary), var(--primary));
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    float: left;
+    background-color: white;
+    border-top-right-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+    width: 50%;
+    z-index: 100;
+    padding-top: 8%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 2%;
+}
+
+.right img {
+    height: 500px;
+}
+
+.ewallet-logo {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    gap: 9px;
+}
+
+.left img {
+    width: 25px;
+    height: 23px;
+
+}
+
+.text-logo {
+    font-family: 'NunitoSans';
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.text-fill h1 {
+    font-family: 'Montserrat';
+    font-size: 21px;
+}
+
+.text-fill p {
+    opacity: 50%;
+    font-size: 12px;
+
+}
+
+.text-fill {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    height: 42px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    width: 100%;
+}
+
+
+.register-question {
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-question a {
+    text-decoration: none;
+}
+
+.enterPin-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    height: 200px;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pin-form input{
+    width: 50px;
+    height: 100px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.right img {
+    position: relative;
+    width: 82%;
+    bottom: -10px;
+    height: fit-content;
+}

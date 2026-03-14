@@ -8,26 +8,482 @@
     --primary : #2948FF;
     --secondary : #396AFC;
     --white : rgb(255,255,255,1);
-    --gradient : linear-gradient(to bottom,var(var(--primary)),var(var(--secondary)))
+    --gradient : linear-gradient(to bottom,var(var(--primary)),var(var(--secondary)));
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'NunitoSans';
+    src: url('/assets/fonts/NunitoSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
+
 header {
     width: auto;
-    height: 70px;
+    height: 50px;
     color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    background-color: #2948FF;
+    justify-content: space-between;
+    padding-inline: 10%;
+    align-items: center;
+}
+
+.header-left p {
+    color: white;
+    font: 20px;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.header-left {
+    font-family: 'Nunitosans';
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+}
+
+.header-rigth button{
+    display: inline-block;
+    border: 1px solid white;
+    height: 35px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 60px;
+    background-color: var(--primary);
+}
+
+.header-rigth button a{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: inline;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+}
+
+.right {
+    position: relative;
+    float: right;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.right img {
+    position: relative;
+    width: 500px;
+    top: 10px;
+    left: 10px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 10%;
+}
+
+.left p {
+      opacity: 50%;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.left button {
+    margin-top: 15px;
+    border: none;
+    height: 50px;
+    width: 120px;
+    margin-bottom: 8px;
+    border-radius: 13px;
+    background-color: var(--primary);
+    font-family: 'Montserrat';
+}
+
+.left button a{
+    text-decoration: none;
+    color: white;
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.partners {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    padding-inline: 10%;
+    background-color: rgba(232, 232, 232, 0.3);
+}
+
+.partners img {
+    width: 60px;
+}
+
+.feature {
+    height: 70vh;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature h1 {
+    font-size: 22px;
+}
+
+.feature p {
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.feature-card div {
+    background: linear-gradient(to bottom,rgb(63, 101, 255),blue);
+    border: 1px solid blue;
+    width: 180px;
+    border-radius: 10px;
+    height: 250px;
+    text-align: center;
+    padding: 4%;
+    padding-top: 7%;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    color: white;
+}
+
+.feature-card h5 {
+    font-family: 'Montserrat Bold';
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.feature-card p {
+    opacity: 100%;
+    font-size: 11px;
+}
+
+.feature-card img {
+    width: 45px;
+    position: relative;
+    right: 17px;
+}
+
+.feature-icon {
+    z-index: 1;
+    position: relative;
+    left: 25px;
+    top: -8px;
+}
+
+.great-feature {
+    background: url(/assets/images/Vector.png);
+    height: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10%;
+    gap: 200px;
+}
+
+.great-left img {
+    width: 270px;
+    position: relative;
+    top: -75px;
+    left: 50px;
+}
+
+.great-rigth {
+    width: 50%;
+    position: relative;
+    top: 80px;
+    color: white;
+}
+
+.great-rigth p {
+    font-size: 15px;
+    opacity: 70%;
+    margin-top: 20px;
+}
+
+.apps-feature {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    position: relative;
+
+}
+
+.apps-feature h3 {
+    position: relative;
+    top: 20px;
+    font-size: 16px;
+    font-family: 'montserrat bold';
+    margin-top:10px;
+}
+
+.apps-feature p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.circle-icon div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+}
+
+.circle-icon {
+    position: relative;
+    top: -240px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 50px;
+ 
+}
+
+.great-rigth button {
+    position: relative;
+    top: -200px;
+    width: 160px;
+    height: 40px;
+    border: none;
+    color: #2948FF;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.background {
+    width: 100%;
+    height: fit-content;
+    z-index: -8;
+    position: relative;
+    top: -447px;
+}
+
+.testimony {
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-top: -30%;
+}
+
+div {
+    overflow: hidden;
+    height: auto;
+}
+
+.testimony h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.testimony p {
+    font-size: 14px;
+    opacity: 70%;
+}
+
+.testimony-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.testimony-cards div{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(232, 232, 232, 0.3);
+    justify-content: center;
+    align-content: center;
+}
+
+.testimony-cards h1 {
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+
+.testimony-cards h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'montserrat bold';
+}
+
+.testimony-cards img {
+    margin-bottom: 10px;
+}
+
+.arrow {
+    margin-left: 20px;
+    position: absolute;
+    left: -10px;
+    bottom: 130px;
+}
+
+.arrow2 {
+    margin-right: 20px;
+    position: absolute;
+    right: -10px;
+    bottom: 130px;
+}
+
+.flexrow-footer {
+    background-color: var(--primary);
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    padding: 8%;
+    padding-top: 4%;
+    justify-content: space-between;
+}
+
+.flexrow-footer section{
+    width: 250px;
+    height: 130px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    padding-inline: 8px;
+}
+
+.info h1 {
+    font-family: 'nunitosans';
+    font-size: 25px;
+    color: white;
+}
+
+.info p {
+    font-size: 14px;
+    font-family: 'montserrat';
+    color: white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-family: 'montserrat';
+    color: white;
+    row-gap: 11px;
+}
+
+.contact img{
+    filter: invert(1);
+    position: relative;
+    top: 7px;
+}
+
+.social-media {
+    font-family: 'montserrat';
+    color: white;
+}
+
+.social-media img{
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.email-footer {
+    color: white;
+    font-family: 'montserrat';
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-footer button {
+    height: 40px;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.email-footer input {
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background: url(/assets/icon/mail.svg) no-repeat 12px center;
+    background-size: 10px 10px;
+    font-size: 10px;
+    padding-left: 38px;
+    background-color: white;
+}
+
+.line {
+    border: 1px solid white;
+    height: 1px;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.lasttext-footer {
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    background-color: #2948FF;
+    color: white;
+    font-family: 'montserrat';
 }
 

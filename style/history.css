@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : #2948FF;
+    --navbar-text : rgba(79, 86, 101, 1);
+    --box: rgba(232, 232, 232, 1);
+    --secondary : #396AFC;
+    --white : rgb(255,255,255,1);
+    --gradient : linear-gradient(to bottom,var(var(--primary)),var(var(--secondary)));
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/assets/fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+header {
+    width: auto;
+    height: 50px;
+    color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding-inline: 4%;
+    align-items: center;
+    box-shadow: 0px 1px 1px rgba(232, 232, 232, 1);
+}
+
+.header-left p {
+    color: var(--primary);
+    font: 20px;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.header-left {
+    font-family: 'Nunitosans';
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'montserrat';
+    font-size: 14px;
+}
+
+.header-right img {
+    width: 35px;
+}
+
+.header-right select {
+    border: none;
+    background-color: white;
+    color: var(--navbar-text);
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    grid-template-areas: 
+    "header header header"
+    "aside center right"
+    "aside center right"
+    ;
+}
+
+.navbar {
+    padding-top: 1%;
+    width: 15%;
+    height: calc(100vh - 50px);
+    float: left;
+    box-shadow: 1px 1px 1px rgba(232, 232, 232, 1);
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgba(79, 86, 101, 1);
+}
+
+.navbar img {
+    color: var(--navbar-text);
+    width: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    height: 20px;
+    font-size: 13px;
+    width: 110px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a:hover{
+    background-color: #2948FF;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    height: 20px;
+    img {
+        filter: contrast(1) invert(1) brightness(1);
+    }
+}
+
+.history {
+    width: 90%;
+    height: calc(100vh - 50px);
+    padding: 2%;
+}
+
+.find {
+    border: 1px solid var(--box);
+    border-radius: 5px;
+    width: 90%;
+    height: calc(100vh - 150px);
+    margin: 10px;
+    position: relative;
+    right: -40px;
+    padding: 20px;
+    h4{
+        font-family: 'montserrat bold';
+    }
+}
+
+.history div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 10px;
+    
+        h4{
+            font-family: 'montserrat bold';
+        }
+    
+}
+
+.top-find {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    input{
+        width: 230px;
+        height: 30px;
+        padding: 10px;
+        border: 1px solid var(--box);
+        border-radius: 5px;
+        background: url(/assets/icon/Search.svg) no-repeat 12px;
+        background-position: 198px;
+    }
+
+}
+
+.table {
+    font-family: 'montserrat';
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.trash-button {
+    border: none;
+    background-color: white;
+}
+
+
+
+.display-profile {
+    width: 40px;
+}
+
+
+
+.next-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    background-color: white;
+    color: rgba(79, 86, 101, 1);
+    div{
+        button{
+            border: none;
+            color: rgba(79, 86, 101, 1);
+            background-color: white;
+        }
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+td {
+    padding:5px;
+    text-align: left;
+}
+
+tr:nth-child(odd){
+    background-color: rgba(249, 250, 251, 1);
+}
+
+.green {
+    color: rgb(0, 214, 0);
+}
+
+.red {
+    color: red;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+

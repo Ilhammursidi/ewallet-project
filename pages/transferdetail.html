@@ -92,9 +92,53 @@
             </div>
             <textarea name="" id="" placeholder="Enter Some Notes"></textarea>
 
-            <button type="submit">Submit</button>
+            <button id="open" type="submit">Submit & Transfer</button>
+
+
+
         </section>
     </main>
+    <dialog id="dialog">
+        <p>TRANSFER TO GHALUH 1</p>
+        <hr>
+        <br><br>
+        <h3>Enter Your Pin 👋</h3>
+        <p>Enter Your Pin For Transaction</p>
+        <div class="pin-inputs">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <button id="next" class="next-btn">Next</button>
+        <p class="text-center">Forgot your PIN ? <a href="/pages/forgotPassword.html">Reset</a></p>
+        <!--        
+                <button type="button" id="close">Close dialog</button> -->
+    </dialog>
+
+    <dialog id="success" class="success">
+        <p class="ghalu">TRANSFER TO GHALUH 1</p>
+        <hr>
+        <img src="/assets/icon/Contact us-pana 1.svg" alt="contact">
+        <h4>Yeay Transfer <span style="color: rgb(0, 255, 0);">Success</span></h4>
+        <p class="thankyou">Thank you for using this application for your financial</p>
+        <button class="done-btn" style="color: white; background-color: #2948ff;">Done</button>
+        <button class="transfer-btn" id="transfer">Transfer Again</button>
+    </dialog>
+
+    <dialog id="error" class="error">
+        <p class="ghalu">TRANSFER TO GHALUH 1</p>
+        <hr>
+        <img src="/assets/icon/Oh no-cuate 1.svg" alt="contact">
+        <h4>Oops Transfer <span style="color: rgb(255, 0, 0);">Failed</span></h4>
+        <p class="thankyou">Sorry Theres is an issue for your transfer, try again later !</p>
+        <button class="done-btn" style="color: white; background-color: #2948ff;">Try Again</button>
+        <button class="transfer-btn"><a href="/pages/dashboard.html">Back To Dashboard</a></button>
+    </dialog>
+
+    <script src="/script/transfer.js"></script>
 </body>
 
 </html>

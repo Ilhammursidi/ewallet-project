@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary : #2948FF;
+    --navbar-text : rgba(79, 86, 101, 1);
+    --box: rgba(232, 232, 232, 1);
+    --secondary : #396AFC;
+    --white : rgb(255,255,255,1);
+    --gradient : linear-gradient(to bottom,var(var(--primary)),var(var(--secondary)));
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/assets/fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+header {
+    width: auto;
+    height: 50px;
+    color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding-inline: 4%;
+    align-items: center;
+    box-shadow: 0px 1px 1px rgba(232, 232, 232, 1);
+}
+
+.header-left p {
+    color: var(--primary);
+    font: 20px;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.header-left {
+    font-family: 'Nunitosans';
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'montserrat';
+    font-size: 14px;
+}
+
+.header-right img {
+    width: 35px;
+}
+
+.header-right select {
+    border: none;
+    background-color: white;
+    color: var(--navbar-text);
+}
+
+
+
+main {
+    
+    width: 100vw;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+}
+
+
+
+.navbar {
+    padding-top: 1%;
+    width: 15%;
+    height: calc(100vh - 50px);
+    float: left;
+    box-shadow: 1px 1px 1px rgba(232, 232, 232, 1);
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgba(79, 86, 101, 1);
+}
+
+.navbar img {
+    color: var(--navbar-text);
+    width: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    height: 20px;
+    font-size: 13px;
+    width: 110px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a:hover{
+    background-color: #2948FF;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    height: 20px;
+    img {
+        filter: contrast(1) invert(1) brightness(1);
+    }
+}
+
+option {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.money {
+    width: calc(100vw - 15%);
+    margin: 20px;
+}
+
+.transfer-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 30px;
+    width: 300px;
+    align-items: center;
+    img {
+        filter: invert(23%) sepia(100%) saturate(8000%) hue-rotate(200deg) brightness(150%) contrast(105%)
+    }
+}
+
+.transfer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.find-title {
+    width: 70%;
+    margin: auto;
+    border: 1px solid var(--box);
+    height: auto;
+    border-radius: 5px;
+    margin-right: 90px;
+}
+
+.find-people {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.find input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--box);
+    padding: 10px;
+}
+
+.top-find {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+td {
+    padding:5px;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: rgba(249, 250, 251, 1);
+}
+
+td:nth-child(2) {
+    text-align: center;
+}

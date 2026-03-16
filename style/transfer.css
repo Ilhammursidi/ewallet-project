@@ -209,6 +209,17 @@ option {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+    input{
+        width: 230px;
+        height: 30px;
+        padding: 10px;
+        border: 1px solid var(--box);
+        border-radius: 5px;
+        background: url(/assets/icon/Search.svg) no-repeat 12px;
+        background-position: 198px;
+    }
 }
 
 
@@ -230,3 +241,4 @@ tr:nth-child(odd){
 td:nth-child(2) {
     text-align: center;
 }
+

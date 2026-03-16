@@ -74,7 +74,6 @@ header {
 .header-rigth button a{
     text-decoration: none;
     color: white;
-   
 }
 
 
@@ -112,7 +111,7 @@ main {
 }
 
 .left p {
-      opacity: 50%;
+    opacity: 50%;
     font-size: 13px;
     margin-top: 10px;
 }
@@ -235,7 +234,7 @@ main {
     width: 270px;
     position: relative;
     top: -75px;
-    left: 50px;
+    left: px;
 }
 
 .great-rigth {
@@ -397,7 +396,7 @@ div {
     justify-content: space-between;
 }
 
-.flexrow-footer section{
+.flexrow-footer div{
     width: 250px;
     height: 130px;
 }
@@ -489,4 +488,8 @@ div {
     background-color: #2948FF;
     color: white;
     font-family: 'montserrat';
+}
+
+@media screen and (max-width:768px) {
+    
 }

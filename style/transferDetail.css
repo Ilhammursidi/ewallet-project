@@ -37,7 +37,10 @@
 
 
 header {
+    z-index: 8;
     width: auto;
+    position: relative;
+    z-index: 10;
     height: 50px;
     color: var(--primary);
     display: flex;
@@ -92,9 +95,8 @@ main {
     font-family: 'Montserrat';
 }
 
-
-
 .navbar {
+    position: relative;
     padding-top: 1%;
     width: 200px;
     height: calc(100vh - 50px);
@@ -148,9 +150,12 @@ nav li a:hover{
     }
 }
 
+
 .money {
     width: 70%;
     margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
 }
 
 .transfer-icon {
@@ -195,7 +200,7 @@ nav li a:hover{
     flex-direction: row;
     padding: 10px;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
     height: 70px;
     margin-bottom: 10px;
     border: 1px solid var(--box);
@@ -218,7 +223,7 @@ nav li a:hover{
 .detail {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 100%;
     gap: 10px;
     h4{
         font-size: 13px;
@@ -232,7 +237,7 @@ nav li a:hover{
 .input-warp {
     margin-top: 10px;
     height: 30px;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     border: 1px solid var(--box);
@@ -252,7 +257,7 @@ nav li a:hover{
     border: none;
     outline: none;
     flex: 1;
-    width: 90%;
+    width: 100%;
 }
 
 .input-warp:has(input:focus) {
@@ -270,12 +275,12 @@ nav li a:hover{
 textarea {
     border: 1px solid var(--box);
     border-radius: 5px;
-    width: 95%;
+    width: 100%;
     height: 140px;
 }
 
 .information button {
-    width: 95%;
+    width: 100%;
     border: none;
     background-color: #2948FF;
     height: 40px;
@@ -283,3 +288,137 @@ textarea {
     color: white;
     border-radius: 5px;
 }
+
+dialog {
+    position: fixed;
+    margin: auto;
+    border: none;
+    height: 400px;
+    width: 450px;
+    border-radius: 16px;
+    padding: 30px;
+    display: grid;
+    font-family: 'montserrat', sans-serif;
+}
+
+hr {
+    margin: auto;
+    border: 1px solid rgb(180, 180, 180);
+    width: 100%;
+    margin-top: -10px;
+}
+
+dialog p:nth-child(1){
+    font-family: 'montserrat bold', sans-serif;
+}
+
+.pin-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pin-inputs input{
+    width: fit-content;
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+
+.text-center {
+    text-align: center;
+    text-decoration: none;
+}
+
+.pin-inputs input:focus{
+    outline: none;
+}
+
+.next-btn {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.4);
+    z-index: 5;
+}
+
+.success img{
+    width: 160px;
+    margin: auto;
+}
+.ghalu {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.thankyou {
+    text-align: center;
+    font-size: 11px;
+    opacity: 70%;
+}
+
+.success {
+    height: 400px;
+    display: grid;
+    gap: 5px;
+}
+
+.success h4{
+    text-align: center;
+}
+
+.success button{
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    height: 40px;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+
+
+
+
+.error img{
+    width: 160px;
+    margin: auto;
+}
+
+
+
+.error {
+    height: 400px;
+    display: grid;
+    gap: 5px;
+}
+
+.error h4{
+    text-align: center;
+}
+
+.error button{
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    height: 40px;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.transfer-btn a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+
+
+

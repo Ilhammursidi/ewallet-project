@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/style/editProfile.css">
+</head>
+<body>
+
+    <!-- OPTIONAL HEADER -->
+   <header>
+        <section class="header-left">
+            <img src="/assets/icon/upWallet.png" alt="Logo E-wallet">
+            <p>E-Wallet</p>
+        </section>
+        <section class="header-right">
+            <p>Ghaluh Wizard</p>
+            <img src="/assets/icon/ghaluh.svg" alt="">
+            <select name="" id="">
+            </select>
+        </section>
+    </header>
+
+    <div class="container">
+        
+        <!-- OPTIONAL SIDEBAR -->
+        <main class="main">
+        <aside class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span>
+                                <img src="/assets/icon/dashboard-two.svg" alt="">
+                            </span>
+                            <span>
+                                Dashboard
+                            </span></a>
+                    </li>
+                    <li><a href="/pages/transfer.html"><img src="/assets/icon/transfer.svg" alt="transfer">Transfer</a>
+                    </li>
+                    <li><a href="/pages/history.html"><img src="/assets/icon/history.svg" alt="history">History</a></li>
+                    <li><a href=""><img src="/assets/icon/Upload.svg" alt="top up">Top Up</a></li>
+                    <li><a href=""><img src="/assets/icon/2 User.svg" alt="profile">Profile</a></li>
+                    <li><a href=""><img src="/assets/icon/Log Out.svg" alt="keluar">Keluar</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <!-- MAIN (INI YANG PENTING) -->
+            <h2>Profile</h2>
+
+            <div class="card">
+                
+                <h3>Profile Picture</h3>
+
+                <div class="profile-top">
+                    <div class="avatar">
+                        <img alt="profile">
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn primary">Change Profile</button>
+                        <button class="btn danger">Delete Profile</button>
+                    </div>
+                </div>
+
+                <p class="note">The profile picture must be 512 x 512 pixels or less</p>
+
+                <form>
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter Full Name">
+
+                    <label>Phone</label>
+                    <input type="text" placeholder="Enter Your Number Phone">
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter Your Email">
+
+                    <label class="password">Password</label>
+                    <a href="/pages/changePassword.html" class="link">Change Password</a>
+
+                    <label class="pin">Pin</label>
+                    <a href="/pages/changePin.html" class="link">Change Pin</a>
+
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

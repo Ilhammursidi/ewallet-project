@@ -5,10 +5,10 @@
 }
 
 :root {
-    --primary : #2948FF;
-    --secondary : #396AFC;
-    --white : rgb(255,255,255,1);
-    --gradient : linear-gradient(to bottom,var(var(--primary)),var(var(--secondary)));
+    --primary: #2948FF;
+    --secondary: #396AFC;
+    --white: rgb(255, 255, 255, 1);
+    --gradient: linear-gradient(to bottom, var(var(--primary)), var(var(--secondary)));
 }
 
 @font-face {
@@ -61,7 +61,7 @@ header {
     height: 28px;
 }
 
-.header-right button{
+.header-right button {
     display: inline-block;
     border: 1px solid white;
     height: 35px;
@@ -71,10 +71,10 @@ header {
     background-color: var(--primary);
 }
 
-.header-right button a{
+.header-right button a {
     text-decoration: none;
     color: white;
-   
+
 }
 
 main {
@@ -85,15 +85,16 @@ main {
     overflow-x: hidden;
     font-family: 'Montserrat';
 }
+
 /* main */
 
 .hero {
     padding-top: 2%;
     height: max-content;
-    background: radial-gradient(circle,var(--secondary),var(--primary));
+    background: radial-gradient(circle, var(--secondary), var(--primary));
 }
 
-.hero h1{
+.hero h1 {
     color: white;
     text-align: center;
     font-size: 50px;
@@ -108,9 +109,8 @@ main {
     margin: auto;
 }
 
-.left img{
+.left img {
     width: 400px;
-    z-index: -1;
 }
 
 .right {
@@ -120,7 +120,7 @@ main {
     color: white;
 }
 
-.right p{
+.right p {
     font-size: 15px;
     margin-bottom: 20px;
 }
@@ -131,7 +131,7 @@ main {
     justify-content: space-between;
 }
 
-.appsmarket button{
+.appsmarket button {
     width: 48%;
     border: none;
     background-color: transparent;
@@ -140,7 +140,7 @@ main {
     height: 40px;
 }
 
-.appsmarket a{
+.appsmarket a {
     text-decoration: none;
     color: white;
     position: relative;
@@ -160,7 +160,7 @@ main {
     margin-bottom: 10px;
 }
 
-h1 img{
+h1 img {
     position: relative;
     top: 5px;
 }
@@ -198,7 +198,8 @@ h1 img{
 .feature-card h3 {
     margin-bottom: 5px;
 }
-.feature-card p{
+
+.feature-card p {
     font-size: 13px;
 }
 
@@ -267,7 +268,7 @@ h1 img{
     background-color: #2948FF;
 }
 
-.left-welcome a{
+.left-welcome a {
     text-decoration: none;
     color: white;
 }
@@ -284,6 +285,7 @@ h1 img{
 .left-features {
     width: 50%;
 }
+
 
 .rigth-features {
     padding-left: 10%;
@@ -308,6 +310,7 @@ h1 img{
     background-color: #2948FF;
     border-radius: 6px;
     color: white;
+
     a {
         text-decoration: none;
         color: white;
@@ -318,14 +321,14 @@ h1 img{
 .partners {
     display: flex;
     flex-direction: row;
-    padding:5%;
+    padding: 5%;
     padding-inline: 9%;
     height: 200px;
     background-color: white;
 }
 
 .trust-partners {
-    width: 40%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -333,16 +336,14 @@ h1 img{
 
 .main-partners {
     width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
 .trust-partners p {
     font-size: 11px;
-}
-
-.main-partners img{
-    position: relative;
-    left: -60px;
-    height: 75px;
 }
 
 .testimony {
@@ -367,7 +368,7 @@ h1 img{
     color: white;
 }
 
-.testi-card h5{             
+.testi-card h5 {
     font-family: 'montserrat bold';
 }
 
@@ -375,7 +376,7 @@ h1 img{
     width: 160px;
 }
 
-.testi-card h1{
+.testi-card h1 {
     font-size: 60px;
 }
 
@@ -424,13 +425,14 @@ h1 img{
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-    gap: 26px   ;
+    gap: 26px;
 }
 
 .right-download p {
     font-size: 15px;
     opacity: 80%;
 }
+
 
 
 /* ============================================= */
@@ -449,7 +451,7 @@ h1 img{
     justify-content: space-between;
 }
 
-.flexrow-footer section{
+.flexrow-footer section {
     width: 250px;
     height: 130px;
 }
@@ -482,7 +484,7 @@ h1 img{
     row-gap: 11px;
 }
 
-.contact img{
+.contact img {
     filter: invert(1);
     position: relative;
     top: 7px;
@@ -493,7 +495,7 @@ h1 img{
     color: white;
 }
 
-.social-media img{
+.social-media img {
     margin-top: 10px;
     margin-left: 12px;
 }
@@ -543,3 +545,297 @@ h1 img{
     font-family: 'montserrat';
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+/* MOBILE MENU */
+.mobile-menu {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    color: var(--primary);
+    font-family: 'montserrat',sans-serif;
+    text-align: center;
+    background: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.mobile-menu a {
+    padding: 12px;
+    text-decoration: none;
+    color: #2948FF;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu a:hover {
+    background: #f5f5f5;
+}
+
+.vertical {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    body, main {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding-inline: 5%;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    /* HERO */
+    .hero h1 {
+        font-size: 26px;
+        width: 90%;
+        line-height: 1.3;
+    }
+
+    .showcase {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left img {
+        width: 260px;
+        position: relative;
+        top: -10px;
+    }
+
+    .right {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .showcase h1 {
+        position: static;
+        margin-top: 15px;
+    }
+
+    .appsmarket {
+        gap: 10px;
+    }
+
+    /* FEATURE */
+    .feature {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-features img {
+        width: 400px;
+        margin-left: 50%;
+    }
+
+    .feature article {
+        width: 100%;
+    }
+
+    .feature-card {
+        flex-direction: column;
+    }
+
+    .feature-card img{
+        position: relative;
+        top: 20px;
+    }
+
+    .card-text {
+        padding: 0;
+    }
+
+    /* WELCOME */
+    .welcome {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .right-welcome {
+        height: 400px;
+    }
+
+    .welcome section {
+        width: 100%;
+    }
+
+    .left-welcome {
+        padding-inline: 5%;
+    }
+
+    .left-welcome button {
+        width: 100%;
+    }
+
+    .layout {
+        margin-left: 195px;
+        width: 70%;
+        margin-top: 29px;
+    }
+
+    .mobile {
+        margin-top: 20px;
+        margin-left: 165px;
+    }
+
+    /* GREAT FEATURES */
+    .great-features {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .rigth-features {
+        padding: 0;
+    }
+
+    .rigth-features button {
+        width: 100%;
+    }
+
+    /* PARTNERS */
+    .partners {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .trust-partners,
+    .main-partners {
+        width: 100%;
+    }
+
+    .main-partners img {
+        position: static;
+        width: 100%;
+    }
+
+    /* TESTIMONY */
+    .testi-card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .arrow,
+    .blue-arrow {
+        display: none;
+    }
+
+    /* DOWNLOAD */
+    .download {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .left-download,
+    .right-download {
+        width: 100%;
+    }
+
+    .left-download img {
+        width: 250px;
+        position: static;
+    }
+
+    /* FOOTER */
+    .flexrow-footer {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .flexrow-footer section {
+        width: 100%;
+    }
+
+    .email-footer input,
+    .email-footer button {
+        width: 100%;
+    }
+
+    .hamburger {
+    display: flex;
+    }
+
+    .header-right {
+    display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .feature{
+        gap: 30px;
+    }
+
+    .right-welcome {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .layout{
+        width: 90%;
+        position: relative;
+        right: 174px;
+    }
+
+    .mobile {
+        position: relative;
+        right: 110px;
+    }
+
+    .left-features img{
+        width: 200px;
+    }
+
+    .testimony {
+        height: 400px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .main-partners {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        gap: 50px;
+        margin: auto;
+
+    }
+
+    .lasttext-footer {
+        font-size: 10px;
+    }
+
+}

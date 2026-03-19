@@ -36,7 +36,7 @@
   }
 
   .transaction-head h5 {
-      font-family: 'montserrat bold';
+      font-family: 'montserrat bold',sans-serif;
   }
 
   .transaction-head a {
@@ -70,12 +70,12 @@
   }
 
   .transfer {
-      font-family: 'montserrat bold';
+      font-family: 'montserrat bold'sans-serif;
       color: rgba(30, 193, 95, 1);
   }
 
   .send {
-      font-family: 'montserrat bold';
+      font-family: 'montserrat bold',sans-serif;
       color: rgba(208, 0, 0, 1);
   }
 
@@ -92,7 +92,7 @@
       width: 220px;
       border-radius: 5px;
       height: 100px;
-      font-family: 'montserrat';
+      font-family: 'montserrat',sans-serif;
       padding: 10px;
       display: flex;
       flex-direction: column;
@@ -137,7 +137,7 @@
       border: 1px solid var(--box);
 
       h4 {
-          font-family: 'montserrat bold';
+          font-family: 'montserrat bold',sans-serif;
       }
   }
 
@@ -186,7 +186,7 @@
       padding: 25px;
 
       h4 {
-          font-family: 'montserrat bold';
+          font-family: 'montserrat bold',sans-serif;
       }
 
       .dropdown {
@@ -208,7 +208,6 @@
       }
   }
 
-  /* ================= HAMBURGER ================= */
   .hamburger {
       display: none;
       flex-direction: column;
@@ -222,7 +221,6 @@
       background: black;
   }
 
-  /* ================= SIDEBAR MOBILE ================= */
   .navbar {
       transition: 0.3s;
   }
@@ -284,35 +282,35 @@
           border-bottom-right-radius: 20px;
       }
 
-     .header-right {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-right: 560px;
-}
+      .header-right {
+          display: flex;
+          flex-direction: row-reverse;
+          margin-right: 560px;
+      }
 
-    .hamburger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 20px;
+      .hamburger {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          cursor: pointer;
+          margin-right: 20px;
 
-    position: relative;
-    z-index: 1001;
-}
-      
-     .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%; /* biar enak */
-    height: 100vh;
-    background: white;
-    z-index: 1000;
-    transform: translateX(-100%);
-    transition: 0.3s;
-}
+          position: relative;
+          z-index: 1001;
+      }
+
+      .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100vh;
+          background: white;
+          z-index: 1000;
+          transform: translateX(-100%);
+          transition: 0.3s;
+      }
 
 
       .navbar.show {
@@ -383,56 +381,57 @@
 
   }
 
-@media (max-width:400px) {
-    .header-right {
-        margin-right: 200px;
-    }
+  @media (max-width:400px) {
+      .header-right {
+          margin-right: 200px;
+      }
 
-    .hamburger {
-        margin-right: 0;
-    }
+      .hamburger {
+          margin-right: 0;
+      }
 
-    .cashflow {
-        margin: 0;
-        margin-left: 5px;
-        width: 360px;
-        height: 120px;
-        padding: 5px;
-    }
-    .wave {
-        position: relative;
-        top: -170px;
-        left: 0px;
-        width: 360px;
-    }
+      .cashflow {
+          margin: 0;
+          margin-left: 5px;
+          width: 360px;
+          height: 120px;
+          padding: 5px;
+      }
 
-    .cashflow-card {
-        font-size: 10px;
-    }
+      .wave {
+          position: relative;
+          top: -170px;
+          left: 0px;
+          width: 360px;
+      }
 
-    .navbar {
-        width: 80%;
-    }
+      .cashflow-card {
+          font-size: 10px;
+      }
 
-    .fast-service {
-        height: 60px;
-        position: relative;
-        top: -150px;
-        left: 0px;
-    }
+      .navbar {
+          width: 80%;
+      }
 
-    .chart img{
-        width: 300px;
-        position: relative;
-        left: 0;   
-    }
+      .fast-service {
+          height: 60px;
+          position: relative;
+          top: -150px;
+          left: 0px;
+      }
 
-    .chart {
-        height: 300px;
-        margin-top: 40px;
-    }
+      .chart img {
+          width: 300px;
+          position: relative;
+          left: 0;
+      }
 
-    .transaction {
-        margin-top: -100px;
-    }
-}
+      .chart {
+          height: 300px;
+          margin-top: 40px;
+      }
+
+      .transaction {
+          margin-top: -100px;
+      }
+  }

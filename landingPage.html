@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Wallet</title>
     <link rel="stylesheet" href="/style/landingPage.css">
 </head>
+
 <body>
     <header>
         <section class="header-left">
@@ -14,8 +16,17 @@
         </section>
         <section class="header-right">
             <button><a href="../pages/login.html">Login</a></button>
-            <button style="background-color: white;"><a style="color: #2948ff;" href="../pages/register.html">Sign Up</a></button>
+            <button style="background-color: white;"><a style="color: #2948ff;" href="../pages/register.html">SignUp</a></button>
         </section>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="/assets/icon/gg_menu-right-alt.svg" alt="hamburger">
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../pages/login.html">Login</a>
+            <a href="../pages/register.html">Sign Up</a>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -24,15 +35,16 @@
             </section>
             <section class="showcase">
                 <section class="left">
-                    <img src="/assets/images/doublephone.png" alt="">
+                    <img src="/assets/images/doublephone.png" alt="phone">
                 </section>
                 <section class="right">
                     <p>Simplify Your Life with Secure and Convenient Mobile Payments</p>
                     <section class="appsmarket">
-                        <button style="background-color: white; "><a style="color: #2948ff;" href=""><img src="/assets/icon/gplay.svg" alt="">Play Store</a></button>
-                        <button><a href=""><img src="/assets/icon/appstore.svg" alt="">App Store</a></button>
+                        <button style="background-color: white; "><a style="color: #2948ff;" href=""><img
+                                    src="/assets/icon/gplay.svg" alt="goggleplay">Play Store</a></button>
+                        <button><a href=""><img src="/assets/icon/appstore.svg" alt="appstore">App Store</a></button>
                     </section>
-                    <h1>4.6 M <img src="/assets/icon/user.svg" alt=""></h1>
+                    <h1>4.6 M <img src="/assets/icon/user.svg" alt="user"></h1>
                     <p>Around the world, we already have over 4.6 happy user</p>
                 </section>
             </section>
@@ -41,7 +53,7 @@
         <section class="feature">
             <article class="feature-card">
                 <div>
-                    <img src="/assets/icon/blueheadphone.svg" alt="">
+                    <img src="/assets/icon/blueheadphone.svg" alt="headphone">
                 </div>
                 <div class="card-text">
                     <h3>24/7 Support</h3>
@@ -50,58 +62,64 @@
             </article>
             <article class="feature-card">
                 <div>
-                    <img src="/assets/icon/blueshield.svg" alt="">
+                    <img src="/assets/icon/blueshield.svg" alt="shield">
                 </div>
                 <div class="card-text">
                     <h3>Data Privacy</h3>
-                    <p>We make sure your data is safe in our database and we will encrypt any data you submitted to us.</p>
+                    <p>We make sure your data is safe in our database and we will encrypt any data you submitted to us.
+                    </p>
                 </div>
             </article>
             <article class="feature-card">
                 <div>
-                    <img src="/assets/icon/bluedownload.svg" alt="">
+                    <img src="/assets/icon/bluedownload.svg" alt="download">
                 </div>
                 <div class="card-text">
                     <h3>Easy Download</h3>
                     <p>Zwallet is 100% totally free to use it’s now available on Google Play Store and App Store.</p>
                 </div>
             </article>
-            
+
         </section>
 
         <section class="welcome">
             <section class="left-welcome">
                 <h4>WELCOME TO E-WALLET</h4>
                 <h1>Your All-in-One Digital Payment Solution</h1>
-                <p>Say goodbye to cash and hello to the future of payments! With e-wallet, you have the power of secure, fast, and convenient digital transactions right at your fingertips. Whether you're shopping, dining out, or sending money to loved ones, we've got you covered.</p>
+                <p>Say goodbye to cash and hello to the future of payments! With e-wallet, you have the power of secure,
+                    fast, and convenient digital transactions right at your fingertips. Whether you're shopping, dining
+                    out, or sending money to loved ones, we've got you covered.</p>
                 <button><a href="">Get Started</a></button>
             </section>
             <section class="right-welcome">
-                <img class="mobile" src="/assets/icon/Mobile - Dashboard V2.svg" alt="">
-                <img class="layout" src="/assets/icon/bluelayout.png" alt="">
+                <img class="mobile" src="/assets/icon/Mobile - Dashboard V2.svg" alt="mobile">
+                <img class="layout" src="/assets/icon/bluelayout.png" alt="blue card">
             </section>
         </section>
 
         <section class="great-features">
-            <article class="left-features"></article>
+            <article class="left-features">
+                <img src="/assets/icon/online-payment-security-concept-3d-phone-bill 1.svg" alt="phone">
+            </article>
             <article class="rigth-features">
                 <h2>All The Great
-Zwallet Features.</h2>
-                <p>We have some great features from the application and it’s totally free to use by all users around the world.</p>
+                    Zwallet Features.</h2>
+                <p>We have some great features from the application and it’s totally free to use by all users around the
+                    world.</p>
                 <div class="green-feature">
-                    <img src="/assets/icon/greencheck.svg" alt="">
+                    <img src="/assets/icon/greencheck.svg" alt="green check">
                     <p>Small Fee</p>
                 </div>
                 <div class="green-feature">
-                    <img src="/assets/icon/greencheck.svg" alt="">
+                    <img src="/assets/icon/greencheck.svg" alt="green check">
                     <p>Data Secured</p>
                 </div>
                 <div class="green-feature">
-                    <img src="/assets/icon/greencheck.svg" alt="">
+                    <img src="/assets/icon/greencheck.svg" alt="green check">
                     <p>User Friendly</p>
                 </div>
                 <button><a href="">Get Started</a></button>
-                   
+
             </article>
         </section>
 
@@ -109,74 +127,95 @@ Zwallet Features.</h2>
             <article class="trust-partners">
                 <h2>100+ Trusted Partners</h2>
                 <p>We have reached global level and have 100+<br>
-brand partners around the globe.</p>
+                    brand partners around the globe.</p>
             </article>
             <article class="main-partners">
-                <img src="/assets/icon/partners.svg" alt="">
+                <img src="/assets/icon/microsoft.svg" alt="microsoft">
+            <img src="/assets/icon/dropbox.svg" alt="dropbox">
+            <img class="small" src="/assets/icon/H&M.svg" alt="h&m">
+            <img src="/assets/icon/airbnb.svg" alt="airbnb">
+            <img src="/assets/icon/cannon.svg" alt="cannon">
+            <img class="small" src="/assets/icon/dell.svg" alt="dell">
             </article>
         </section>
 
         <section class="testimony">
             <article class="testi-head">
                 <h2>What Our Users Are Saying</h2>
-                <p>Ready to experience the future of payments? Download e-wallet now and enjoy a world of convenience at your fingertips.</p>
+                <p>Ready to experience the future of payments? Download e-wallet now and enjoy a world of convenience at
+                    your fingertips.</p>
             </article>
             <article class="testi-card">
                 <h5>James Bond</h5>
-                <img src="/assets/icon/bintang.svg" alt="">
+                <img src="/assets/icon/bintang.svg" alt="rating">
                 <h1>“</h1>
-                <p>I've been using the e-wallet for over two years now, and I'm very satisfied with the ease of use. This has completely changed the way I shop and conduct financial transactions.</p>
+                <p>I've been using the e-wallet for over two years now, and I'm very satisfied with the ease of use.
+                    This has completely changed the way I shop and conduct financial transactions.</p>
             </article>
         </section>
 
-        <img class="arrow" src="/assets/icon/arrow.svg" alt="">
-        <img class="blue-arrow" src="/assets/icon/blearrow.svg" alt="">
+        <img class="arrow" src="/assets/icon/arrow.svg" alt="left">
+        <img class="blue-arrow" src="/assets/icon/blearrow.svg" alt="right">
 
 
-    <section class="download">
-        <article class="left-download">
-            <img src="/assets/icon/doublephone.svg" alt="">
-        </article>
-        <article class="right-download">
-            <h2>Download The App</h2>
-            <p>Ready to experience the future of payments? Download e-wallet now and enjoy a world of convenience at your fingertips.</p>
-            <div class="appsmarket">
-                <button style="background-color: #2948ff; "><a style="color: white;" href=""><img src="/assets/icon/gplay.svg" alt="">Play Store</a></button>
-                <button style="background-color: white; border: 1px solid #2948ff;"><a style="color:#2948ff" href=""><img src="/assets/icon/blueappstore.svg " alt="">App Store</a></button>
-            </div>
-        </article>
-    </section>
+        <section class="download">
+            <article class="left-download">
+                <img src="/assets/icon/doublephone.svg" alt="phone ">
+            </article>
+            <article class="right-download">
+                <h2>Download The App</h2>
+                <p>Ready to experience the future of payments? Download e-wallet now and enjoy a world of convenience at
+                    your fingertips.</p>
+                <div class="appsmarket">
+                    <button style="background-color: #2948ff; "><a style="color: white;" href=""><img
+                                src="/assets/icon/gplay.svg" alt="">Play Store</a></button>
+                    <button style="background-color: white; border: 1px solid #2948ff;"><a style="color:#2948ff"
+                            href=""><img src="/assets/icon/blueappstore.svg " alt="">App Store</a></button>
+                </div>
+            </article>
+        </section>
 
     </main>
-     <footer>
+    <footer>
         <section class="flexrow-footer">
             <section class="info">
-                <img src="/assets/icon/Money Wallet.svg" alt=""><h1>E-Wallet</h1>
+                <img src="/assets/icon/Money Wallet.svg" alt="logo">
+                <h1>E-Wallet</h1>
                 <p>Clarity gives you the blocks and components you need to create a truly professional website.</p>
+            </section>
+            <section class="contact">
+                <h3>GET IN TOUCH</h3>
+                <p><img src="/assets/icon/u_phone.svg" alt="telephone"> +62 5637 8882 9901</p>
+                <p><img src="/assets/icon/fi_mail.svg" alt="mail logo"> contact@zwallet.com</p>
+            </section>
+            <section class="social-media">
+                <h3>SOCIAL MEDIA</h3>
+                <img src="/assets/icon/1.svg" alt="twitter">
+                <img src="/assets/icon/2.svg" alt="facebook">
+                <img src="/assets/icon/3.svg" alt="instagram">
+                <img src="/assets/icon/4.svg" alt="github">
+            </section>
+            <section class="email-footer">
+                <h3>NEWSLETTER</h3>
+                <input type="email" name="" id="" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </section>
         </section>
-        <section class="contact">
-            <h3>GET IN TOUCH</h3>
-            <p><img src="/assets/icon/u_phone.svg" alt=""> +62 5637 8882 9901</p>
-            <p><img src="/assets/icon/fi_mail.svg" alt=""> contact@zwallet.com</p>
+        <section class="lasttext-footer">
+            <hr class="line">
+            <p>© Copyright 2022, All Rights Reserved by ClarityUI</p>
         </section>
-        <section class="social-media">
-            <h3>SOCIAL MEDIA</h3>
-            <img src="/assets/icon/1.svg" alt="">
-            <img src="/assets/icon/2.svg" alt="">
-            <img src="/assets/icon/3.svg" alt="">
-            <img src="/assets/icon/4.svg" alt="">
-        </section>
-        <section class="email-footer">
-            <h3>NEWSLETTER</h3>
-        <input type="email" name="" id="" placeholder="Enter Your Email" >
-        <button>Subscribe</button>
-    </section>
-</section>
-<section class="lasttext-footer">
-    <hr class="line">
-    <p>© Copyright 2022, All Rights Reserved by ClarityUI</p>
-</section>
     </footer>
-    
+    <script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
 </body>
+
 </html>

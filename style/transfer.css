@@ -57,7 +57,7 @@ header {
 }
 
 .header-left {
-    font-family: 'Nunitosans';
+    font-family: 'Nunitosans',sans-serif;
     font-weight: bold;
     position: relative;
     display: flex;
@@ -71,7 +71,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-family: 'montserrat';
+    font-family: 'montserrat',sans-serif;
     font-size: 14px;
 }
 
@@ -93,7 +93,7 @@ main {
     height: calc(100vh - 50px);
     overflow: hidden;
     overflow-x: hidden;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
 }
 
 
@@ -129,9 +129,9 @@ nav li a{
     align-items: center;
     gap: 10px;
     padding: 5px;
-    height: 20px;
+    height: 40px;
     font-size: 13px;
-    width: 110px;
+    width: 120px;
 }
 
 nav li {
@@ -143,7 +143,7 @@ nav li a:hover{
     color: white;
     border-radius: 5px;
     padding: 5px;
-    height: 20px;
+    height: 40px;
     img {
         filter: contrast(1) invert(1) brightness(1);
     }
@@ -240,5 +240,79 @@ tr:nth-child(odd){
 
 td:nth-child(2) {
     text-align: center;
+}
+  .back-btn {
+      display: none;
+  }
+
+  .transfer-title {
+    display: none;
+  }
+
+
+@media (max-width:768px) {
+     header {
+            width: 100%;
+          padding: 10px 15px;
+          color: white;
+          background-color: #2948FF;
+      }
+
+      select {
+          display: none;
+      }
+       .header-left {
+        display: none;
+       }
+    
+    .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+
+    position: relative;
+    z-index: 1001;
+}
+      
+     .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%; 
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: 0.3s;
+}
+
+
+      .navbar.show {
+          transform: translateX(0);
+      }
+
+      .money {
+        display: none;
+      }
+
+      .find-title {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .header-right {
+        display: none;
+      }
+
+      .transfer-title {
+        display: block;
+        color: white;
+        justify-content: center;
+        width: 400px;
+        font-family: 'montserrat',sans-serif;
+      }
 }
 

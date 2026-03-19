@@ -126,6 +126,7 @@ main {
     gap: 10px;
 }
 
+
 .sing-in-btn {
     margin-top: 10px;
     display: flex;
@@ -133,21 +134,25 @@ main {
     gap: 12px;
 }
 
-.sing-in-btn button {
-    height: 35px;
-    border-radius: 15px;
+.social-media-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    font-family: 'montserrat',sans-serif;
+    border-radius: 20px;
     border: 1px solid var(--form-input-boder);
-    background-color: var(--form-input-color);
-    color: rgba(79, 86, 101, 1);
 }
 
-.google-btn {
-    background: url(../assets/icon/google.svg) no-repeat 178px center;
+.social-media-button a{
+    text-decoration: none;
+    color: black;
 }
 
-.facebook-btn {
-    background: url(../assets/icon/round-fb.svg) no-repeat 170px center;
-}
+
+
 
 .line {
     margin-top: 2px;
@@ -251,3 +256,42 @@ button {
     margin-top: -12px;
 }
 
+
+@media (max-width: 768px) {
+    main {
+        overflow: hidden;
+    }
+    
+    .register-question {
+        position: relative;
+        left: 240px;
+    }
+
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media (max-width:400px) {
+    main {
+        overflow: hidden;
+        width: 400px;
+        }
+
+    .or {
+        position: relative;
+        left: 120px;
+    }
+
+    .register-question {
+        position: relative;
+        left: 60px;
+    }
+}

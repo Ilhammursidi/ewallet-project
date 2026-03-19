@@ -18,9 +18,13 @@ toFailed.addEventListener("click",()=> {
     error.showModal()
 })
 
+function toggleSidebar() {
+    const nav = document.querySelector(".navbar");
+    const burger = document.querySelector(".hamburger");
+
+    nav.classList.toggle("show");
+
+    burger.textContent = nav.classList.contains("show") ? "✖" : "☰";
+}
 
 
-// // Close button closes the dialog box
-// closeButton.addEventListener("click", () => {
-//   dialog.close();
-// });

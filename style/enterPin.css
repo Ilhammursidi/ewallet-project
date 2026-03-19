@@ -136,16 +136,14 @@ button {
 }
 
 
-.register-question {
+.forget-question {
     position: relative;
     left: 150px;
     margin-top: 10px;
     font-size: 14px;
 }
 
-.register-question a {
-    text-decoration: none;
-}
+
 
 .enterPin-form {
     display: flex;
@@ -164,6 +162,7 @@ button {
     border: none;
     font-size: 30px;
     text-align: center;
+    border-bottom: 1px solid var(--form-input-boder);
 }
 
 .right img {
@@ -171,4 +170,71 @@ button {
     width: 82%;
     bottom: -10px;
     height: fit-content;
+}
+
+.forget-question a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+    }
+    
+    main {
+        overflow: hidden;
+    }
+    
+    .left {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        border-radius: 40px;
+    }
+
+    
+.enterPin-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    height: 150px;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pin-form input{
+    width: 30px;
+    height: 80px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--form-input-boder);
+}
+
+    
+    .right {
+        display: none;
+    }
+
+    .forget-question {
+        margin-top: 10px;
+        margin-left: -75px;
+    }
+}
+
+@media (max-width:400px) {
+
+    body{
+        height: 100vh;
+    }
+
+    .left {
+        width: 80%;
+    }
+
+    .forget-question {
+        margin-right: 40px;
+    }
 }

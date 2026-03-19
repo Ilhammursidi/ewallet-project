@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transfer</title>
+    
     <link rel="stylesheet" href="/style/transfer.css">
 </head>
 <body>
@@ -15,17 +16,23 @@
         </section>
         <section class="header-right">
             <p>Ghaluh Wizard</p>
-            <img src="/assets/icon/ghaluh.svg" alt="">
+            <img src="/assets/icon/ghaluh.svg" alt="ghaluh">
             <select name="" id="">
             </select>
         </section>
+        <div class="transfer-title">
+            <h4>Transfer</h4>
+        </div>
+        <div class="hamburger" onclick="toggleSidebar()">
+    ☰
+</div>
     </header>
     <main>
         <aside class="navbar">
             <nav>
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="/pages/dashboard.html">
                             <span>
                                 <img src="/assets/icon/dashboard-two.svg" alt="">
                             </span>
@@ -35,9 +42,9 @@
                     </li>
                     <li><a href="/pages/transfer.html"><img src="/assets/icon/transfer.svg" alt="transfer">Transfer</a></li>
                     <li><a href="/pages/history.html"><img src="/assets/icon/history.svg" alt="history">History</a></li>
-                    <li><a href=""><img src="/assets/icon/Upload.svg" alt="top up">Top Up</a></li>
-                    <li><a href=""><img src="/assets/icon/2 User.svg" alt="profile">Profile</a></li>
-                    <li><a href=""><img src="/assets/icon/Log Out.svg" alt="keluar">Keluar</a></li>
+                    <li><a href="/pages/topUp.html"><img src="/assets/icon/Upload.svg" alt="top up">Top Up</a></li>
+                    <li><a href="/pages/editProfile.html"><img src="/assets/icon/2 User.svg" alt="profile">Profile</a></li>
+                    <li><a href="/landingPage.html"><img src="/assets/icon/Log Out.svg" alt="keluar">Keluar</a></li>
                 </ul>
             </nav>
         </aside>
@@ -130,6 +137,16 @@
                 </div>
             </section>
     </main>
+ <script>
+function toggleSidebar() {
+    const nav = document.querySelector(".navbar");
+    const burger = document.querySelector(".hamburger");
 
+    nav.classList.toggle("show");
+
+    // ganti icon
+    burger.textContent = nav.classList.contains("show") ? "✖" : "☰";
+}
+</script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History</title>
+    <link rel="stylesheet" href="/style/whiteHeader.css">
     <link rel="stylesheet" href="/style/history.css">
 </head>
 
@@ -16,20 +17,26 @@
         </section>
         <section class="header-right">
             <p>Ghaluh Wizard</p>
-            <img src="/assets/icon/ghaluh.svg" alt="">
+            <img src="/assets/icon/ghaluh.svg" alt="Ghaluh">
             <select name="" id="">
                 <option value=""></option>
                 <option value=""></option>
                 <option value=""></option>
             </select>
         </section>
+        <div class="transfer-title">
+            <h4>History Transaction</h4>
+        </div>
+        <div class="hamburger" onclick="toggleSidebar()">
+    ☰
+</div>
     </header>
     <main>
         <aside class="navbar">
             <nav>
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="/pages/dashboard.html">
                             <span>
                                 <img src="/assets/icon/dashboard-two.svg" alt="">
                             </span>
@@ -37,17 +44,17 @@
                                 Dashboard
                             </span></a>
                     </li>
-                    <li><a href=""><img src="/assets/icon/transfer.svg" alt="">Transfer</a></li>
-                    <li><a href=""><img src="/assets/icon/history.svg" alt="">History</a></li>
-                    <li><a href=""><img src="/assets/icon/Upload.svg" alt="">Top Up</a></li>
-                    <li><a href=""><img src="/assets/icon/2 User.svg" alt="">Profile</a></li>
-                    <li><a href=""><img src="/assets/icon/Log Out.svg" alt="">Keluar</a></li>
+                    <li><a href="/pages/transfer.html"><img src="/assets/icon/transfer.svg" alt="">Transfer</a></li>
+                    <li><a href="/pages/history.html"><img src="/assets/icon/history.svg" alt="">History</a></li>
+                    <li><a href="/pages/topUp.html"><img src="/assets/icon/Upload.svg" alt="">Top Up</a></li>
+                    <li><a href="/pages/editProfile.html"><img src="/assets/icon/2 User.svg" alt="">Profile</a></li>
+                    <li><a href="/landingPage.html"><img src="/assets/icon/Log Out.svg" alt="">Keluar</a></li>
                 </ul>
             </nav>
         </aside>
 
         <section class="history">
-            <div>
+            <div class="history-title">
                 <img src="/assets/icon/bluehistory.svg" alt="">
                 <h4>History Transaction</h4>
             </div>
@@ -138,6 +145,16 @@
     <footer>
 
     </footer>
+     <script>
+function toggleSidebar() {
+    const nav = document.querySelector(".navbar");
+    const burger = document.querySelector(".hamburger");
+
+    nav.classList.toggle("show");
+
+    burger.textContent = nav.classList.contains("show") ? "✖" : "☰";
+}
+</script>
 </body>
 
 </html>

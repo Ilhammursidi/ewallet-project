@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transfer Detail</title>
+    <title>Top Up</title>
+    
     <link rel="stylesheet" href="/style/topUp.css">
 </head>
 
@@ -16,17 +17,23 @@
         </section>
         <section class="header-right">
             <p>Ghaluh Wizard</p>
-            <img src="/assets/icon/ghaluh.svg" alt="">
+            <img src="/assets/icon/ghaluh.svg" alt="ghaluh">
             <select name="" id="">
             </select>
         </section>
+        <div class="top-up-header">
+            <h4>Top up</h4>
+        </div>
+         <div class="hamburger" onclick="toggleSidebar()">
+            ☰
+        </div>
     </header>
     <main>
         <aside class="navbar">
             <nav>
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="/pages/dashboard.html">
                             <span>
                                 <img src="/assets/icon/dashboard-two.svg" alt="">
                             </span>
@@ -37,9 +44,9 @@
                     <li><a href="/pages/transfer.html"><img src="/assets/icon/transfer.svg" alt="transfer">Transfer</a>
                     </li>
                     <li><a href="/pages/history.html"><img src="/assets/icon/history.svg" alt="history">History</a></li>
-                    <li><a href=""><img src="/assets/icon/Upload.svg" alt="top up">Top Up</a></li>
-                    <li><a href=""><img src="/assets/icon/2 User.svg" alt="profile">Profile</a></li>
-                    <li><a href=""><img src="/assets/icon/Log Out.svg" alt="keluar">Keluar</a></li>
+                    <li><a href="/pages/topUp.html"><img src="/assets/icon/Upload.svg" alt="top up">Top Up</a></li>
+                    <li><a href="/pages/editProfile.html"><img src="/assets/icon/2 User.svg" alt="profile">Profile</a></li>
+                    <li><a href="/landingPage.html"><img src="/assets/icon/Log Out.svg" alt="keluar">Keluar</a></li>
                 </ul>
             </nav>
         </aside>
@@ -71,27 +78,27 @@
                 <p class="small-text">Choose your payment method for top up account</p>
                 <div class="payment">
                     <div class="method-payment">
-                        <input type="radio" name="bri" id="bri">
+                        <input type="radio" name="payment" id="bri">
                         <img src="/assets/icon/Bank BRI (Bank Rakyat Indonesia) Logo (SVG-240p) - FileVector69 1.svg" alt="BRI">
                         <label for="bri">Bank Rakyat Indonesia</label>
                     </div>
                     <div class="method-payment">
-                        <input type="radio" name="dana" id="dana">
+                        <input type="radio" name="payment" id="dana">
                         <img src="/assets/icon/Logo DANA (PNG-240p) - FileVector69 1.svg" alt="dana">
                         <label for="dana">Dana</label>
                     </div>
                     <div class="method-payment">
-                        <input type="radio" name="bca" id="bca">
+                        <input type="radio" name="payment" id="bca">
                         <img src="/assets/icon/Bank BCA Logo (SVG-240p) - FileVector69 1.svg" alt="bca">
                         <label for="bca">Bank Central Asia</label>
                     </div>
                     <div class="method-payment">
-                        <input type="radio" name="gopay" id="gopay">
+                        <input type="radio" name="payment" id="gopay">
                         <img src="/assets/icon/Logo GoPay (SVG-240p) - FileVector69 1.svg" alt="gopay">
                         <label for="gopay">Gopay</label>
                     </div>
                     <div class="method-payment">
-                        <input type="radio" name="ovo" id="ovo">
+                        <input type="radio" name="payment" id="ovo">
                         <img src="/assets/icon/OVO.svg" alt="ovo">
                         <label for="ovo">OVO</label>
                     </div>
@@ -121,5 +128,6 @@
             </section>
         </section>
     </main>
+    <script src="/script/transfer.js"></script>
     </body>
     </html>
